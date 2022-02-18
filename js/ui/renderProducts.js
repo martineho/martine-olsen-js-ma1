@@ -1,4 +1,3 @@
-
 export function renderProduct(product) {
 
     const productContainer = document.querySelector(".product-container");
