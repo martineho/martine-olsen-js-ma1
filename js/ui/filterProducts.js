@@ -1,15 +1,11 @@
-const search = document.querySelector(".search__form__input");
+export function filterProducts(listOfProducts, maxPrice) {
+    return listOfProducts.filter(function (product) {
+      return Number(product.price) <= Number(maxPrice)
+    },
+)
+};
 
-export function filterProducts (product) { 
 
-    search.addEventListener('onkeyup', function(event) {
-      const productValue = event.target.value;
-  
-      if (product.price <= productValue) {
-        return true;
-    }
-}) 
-}
 
 
 /* const search = document.querySelector(".search__form__input");

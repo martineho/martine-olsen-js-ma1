@@ -1,6 +1,6 @@
-export function renderProduct(product) {
+const productContainer = document.querySelector(".product-container");
 
-    const productContainer = document.querySelector(".product-container");
+export function renderProduct(product) {
    
     const productName = product.title;
     const productPrice = product.price;
@@ -12,6 +12,6 @@ export function renderProduct(product) {
 }
 
 export function renderProducts(listOfProducts) {
-    listOfProducts.forEach(renderProduct);
     productContainer.innerHTML = "";
+    listOfProducts.forEach(renderProduct);
   }

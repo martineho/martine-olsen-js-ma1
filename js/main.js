@@ -10,7 +10,12 @@ async function main() {
     productContainer.innerHTML = "";  
 
     renderProducts(products);
-    filterProducts();
+    
+    const search = document.querySelector(".search__form__input")
+    search.onkeyup = function (event) {
+       const filteredProducts = filterProducts(products);
+       renderProducts(filteredProducts);
+    }
   }
   main();
 
