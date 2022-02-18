@@ -1,14 +1,14 @@
 
-export function renderProduct(products) {
+export function renderProduct(product) {
 
     const productContainer = document.querySelector(".product-container");
 
     productContainer.innerHTML = "";
     
-    for(let i = 0; i < products.length; i++ ){
+    for(let i = 0; i < product.length; i++ ){
     
-    const productName = products[i].title;
-    const productPrice = products[i].price;
+    const productName = product.title;
+    const productPrice = product.price;
 
     productContainer.innerHTML += `<div class="product">
                                         <h4>${productName}</h4>
