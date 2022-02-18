@@ -1,7 +1,18 @@
+import { displayMessage } from "./displayMessage.js";
+
 export async function getProducts() {
-    const response = await fetch("https://fakestoreapi.com/products/");
-    return await response.json();
+
+    try {
+        const response = await fetch("https://fakestoreapi.com/products/");
+        return await response.json();
+    }
+    catch (error) {
+        console.log(error);
+        displayMessage("error");
+    }
   }
+
+  getProducts();
 
 
 /*

@@ -83,6 +83,11 @@ h4 {
   color: gray;
 }
 
+.message {
+  color: black;
+  font-size: 2rem;
+}
+
 .loader {
   border: 10px solid rgb(216, 216, 216);
   border-top: 10px solid rgb(100, 100, 100);
